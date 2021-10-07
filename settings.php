@@ -15,4 +15,11 @@ if ( $hassiteconfig ){
         PARAM_TEXT
     ) );
 
+    $settings->add( new admin_setting_configtext(
+        'local_isymetaindex/host', // ref
+        'Externer Host',
+        'This is the host used to access the External API',
+        'Keinen Host angegeben',
+        PARAM_TEXT
+    ) );
 }
